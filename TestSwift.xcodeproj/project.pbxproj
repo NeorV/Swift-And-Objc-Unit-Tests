@@ -13,7 +13,12 @@
 		A50ED53A1AB596DB00E8973C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50ED5381AB596DB00E8973C /* Main.storyboard */; };
 		A50ED53C1AB596DB00E8973C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50ED53B1AB596DB00E8973C /* Images.xcassets */; };
 		A50ED53F1AB596DB00E8973C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A50ED53D1AB596DB00E8973C /* LaunchScreen.xib */; };
-		A50ED54B1AB596DC00E8973C /* TestSwiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A50ED54A1AB596DC00E8973C /* TestSwiftTests.m */; };
+		A50ED5561AB596F900E8973C /* MySwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50ED5551AB596F900E8973C /* MySwiftClass.swift */; };
+		A50ED55F1AB59AD700E8973C /* MyOBJCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A50ED55E1AB59AD700E8973C /* MyOBJCClass.m */; };
+		A50ED5611AB59DA000E8973C /* TestOBJC.m in Sources */ = {isa = PBXBuildFile; fileRef = A50ED5601AB59DA000E8973C /* TestOBJC.m */; };
+		A50ED5641AB5A1A900E8973C /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50ED5631AB5A1A900E8973C /* TestSwift.swift */; };
+		A50ED5681AB5A49F00E8973C /* MySwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50ED5551AB596F900E8973C /* MySwiftClass.swift */; };
+		A50ED5691AB5A4BA00E8973C /* MyOBJCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A50ED55E1AB59AD700E8973C /* MyOBJCClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,15 @@
 		A50ED53E1AB596DB00E8973C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A50ED5441AB596DB00E8973C /* TestSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50ED5491AB596DB00E8973C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A50ED54A1AB596DC00E8973C /* TestSwiftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSwiftTests.m; sourceTree = "<group>"; };
+		A50ED5541AB596F800E8973C /* TestSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		A50ED5551AB596F900E8973C /* MySwiftClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySwiftClass.swift; sourceTree = "<group>"; };
+		A50ED55D1AB59AD700E8973C /* MyOBJCClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOBJCClass.h; sourceTree = "<group>"; };
+		A50ED55E1AB59AD700E8973C /* MyOBJCClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOBJCClass.m; sourceTree = "<group>"; };
+		A50ED5601AB59DA000E8973C /* TestOBJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOBJC.m; sourceTree = "<group>"; };
+		A50ED5621AB5A1A800E8973C /* TestSwiftTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestSwiftTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		A50ED5631AB5A1A900E8973C /* TestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
+		A50ED56A1AB5A6C000E8973C /* Prefix_Header.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix_Header.pch; sourceTree = "<group>"; };
+		A50ED56B1AB5A76B00E8973C /* Prefix_Header.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix_Header.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +94,11 @@
 		A50ED52D1AB596DB00E8973C /* TestSwift */ = {
 			isa = PBXGroup;
 			children = (
-				A50ED5321AB596DB00E8973C /* AppDelegate.h */,
-				A50ED5331AB596DB00E8973C /* AppDelegate.m */,
-				A50ED5351AB596DB00E8973C /* ViewController.h */,
-				A50ED5361AB596DB00E8973C /* ViewController.m */,
+				A50ED56A1AB5A6C000E8973C /* Prefix_Header.pch */,
+				A50ED5541AB596F800E8973C /* TestSwift-Bridging-Header.h */,
+				A50ED56C1AB5A87800E8973C /* AppDelegate */,
+				A50ED56D1AB5A88500E8973C /* VC */,
+				A50ED56E1AB5A8A400E8973C /* Classes */,
 				A50ED5381AB596DB00E8973C /* Main.storyboard */,
 				A50ED53B1AB596DB00E8973C /* Images.xcassets */,
 				A50ED53D1AB596DB00E8973C /* LaunchScreen.xib */,
@@ -105,7 +119,10 @@
 		A50ED5471AB596DB00E8973C /* TestSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				A50ED54A1AB596DC00E8973C /* TestSwiftTests.m */,
+				A50ED56B1AB5A76B00E8973C /* Prefix_Header.pch */,
+				A50ED5621AB5A1A800E8973C /* TestSwiftTests-Bridging-Header.h */,
+				A50ED5601AB59DA000E8973C /* TestOBJC.m */,
+				A50ED5631AB5A1A900E8973C /* TestSwift.swift */,
 				A50ED5481AB596DB00E8973C /* Supporting Files */,
 			);
 			path = TestSwiftTests;
@@ -117,6 +134,34 @@
 				A50ED5491AB596DB00E8973C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A50ED56C1AB5A87800E8973C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A50ED5321AB596DB00E8973C /* AppDelegate.h */,
+				A50ED5331AB596DB00E8973C /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A50ED56D1AB5A88500E8973C /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				A50ED5351AB596DB00E8973C /* ViewController.h */,
+				A50ED5361AB596DB00E8973C /* ViewController.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		A50ED56E1AB5A8A400E8973C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A50ED5551AB596F900E8973C /* MySwiftClass.swift */,
+				A50ED55D1AB59AD700E8973C /* MyOBJCClass.h */,
+				A50ED55E1AB59AD700E8973C /* MyOBJCClass.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A50ED5371AB596DB00E8973C /* ViewController.m in Sources */,
+				A50ED55F1AB59AD700E8973C /* MyOBJCClass.m in Sources */,
 				A50ED5341AB596DB00E8973C /* AppDelegate.m in Sources */,
+				A50ED5561AB596F900E8973C /* MySwiftClass.swift in Sources */,
 				A50ED5311AB596DB00E8973C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A50ED54B1AB596DC00E8973C /* TestSwiftTests.m in Sources */,
+				A50ED5611AB59DA000E8973C /* TestOBJC.m in Sources */,
+				A50ED5681AB5A49F00E8973C /* MySwiftClass.swift in Sources */,
+				A50ED5691AB5A4BA00E8973C /* MyOBJCClass.m in Sources */,
+				A50ED5641AB5A1A900E8973C /* TestSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,9 +395,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PREFIX_HEADER = TestSwift/Prefix_Header.pch;
 				INFOPLIST_FILE = TestSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TestSwift;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestSwift/TestSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -355,9 +409,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PREFIX_HEADER = TestSwift/Prefix_Header.pch;
 				INFOPLIST_FILE = TestSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TestSwift;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestSwift/TestSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -365,17 +422,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_PREFIX_HEADER = TestSwiftTests/Prefix_Header.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
-					"$(inherited)",
+					"TEST=1",
 				);
 				INFOPLIST_FILE = TestSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TestSwiftTests;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestSwiftTests/TestSwiftTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestSwift.app/TestSwift";
 			};
 			name = Debug;
@@ -384,13 +445,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_PREFIX_HEADER = TestSwiftTests/Prefix_Header.pch;
 				INFOPLIST_FILE = TestSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TestSwiftTests;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestSwiftTests/TestSwiftTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestSwift.app/TestSwift";
 			};
 			name = Release;

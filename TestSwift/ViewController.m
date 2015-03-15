@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "TestSwift-Swift.h"
+#import "MyOBJCClass.h"
 
 @interface ViewController ()
 
@@ -14,14 +16,19 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    MySwiftClass *swift = [MySwiftClass new];
+    
+    NSLog(@"swift.swiftString = %@", swift.swiftString);
+    NSLog(@"swift.objcString = %@", swift.objcString);
+    
+    MyOBJCClass *objc = [MyOBJCClass new];
+    
+    NSLog(@"objc.objcString = %@", objc.objcStrng);
+    NSLog(@"objc.swiftString = %@", objc.swiftString);
 }
 
 @end
